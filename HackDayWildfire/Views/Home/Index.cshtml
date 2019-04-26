@@ -2,7 +2,8 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron" style="height:400px">
+<div class="jumbotron" style="height:400px;">
+    <img src="~/Content/fires.jpg" style="height:100%;"/>
 </div>
 
 <div class="row">
@@ -10,17 +11,17 @@
         <h3>Select a Year:</h3>
         <div class='col-sm-6'>
             <div class="form-group">
-                <div class='input-group date' id='datetimepicker3'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </span>
-                </div>
-
-            </div>
-            <div class="form-group">
-                <button type="button" class="btn btn-primary">Submit</button>
+                <form method="post">
+                    <input type='text' class="form-control" id="year" name="year" />
+                    <input type="submit" class="btn btn-primary" style="margin-top:10px;">
+                </form>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Output:</h3>
     </div>
 </div>

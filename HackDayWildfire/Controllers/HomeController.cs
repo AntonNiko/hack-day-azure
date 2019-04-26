@@ -26,5 +26,13 @@ namespace HackDayWildfire.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Index(string year)
+        {
+
+            // Requests
+            return Content($"Hello {year}");
+        }
     }
 }
